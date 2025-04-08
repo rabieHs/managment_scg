@@ -1,0 +1,1 @@
+/Users/Apple/managment_system/build/app/intermediates/cxx/Debug/1k2i1e73/obj/arm64-v8a

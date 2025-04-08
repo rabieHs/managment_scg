@@ -1,0 +1,2 @@
+/Users/Apple/managment_system/android/app/.cxx/Debug/g3r3t522/x86/CMakeFiles/edit_cache.dir
+/Users/Apple/managment_system/android/app/.cxx/Debug/g3r3t522/x86/CMakeFiles/rebuild_cache.dir

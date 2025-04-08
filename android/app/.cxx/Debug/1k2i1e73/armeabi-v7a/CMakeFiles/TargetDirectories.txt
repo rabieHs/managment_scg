@@ -1,0 +1,2 @@
+/Users/Apple/managment_system/android/app/.cxx/Debug/1k2i1e73/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/Apple/managment_system/android/app/.cxx/Debug/1k2i1e73/armeabi-v7a/CMakeFiles/rebuild_cache.dir
