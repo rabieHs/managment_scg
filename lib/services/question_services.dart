@@ -32,7 +32,7 @@ class QuestionService {
   }
 
   Future<Question> askQuestion(String questionText) async {
-    final url = Uri.parse('http://localhost:3000/ask_question');
+    final url = Uri.parse('http://192.168.1.32:3000/ask_question');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

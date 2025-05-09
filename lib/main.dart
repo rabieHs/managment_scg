@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:managment_system/services/authentication.dart';
 import 'package:managment_system/views/admin/admin_home.dart';
 import 'package:managment_system/views/chef/chef_home.dart';
 import 'package:managment_system/views/login.dart';
 import 'package:managment_system/views/user/user_home.dart';
-import 'package:managment_system/views/user/user_home.dart';
 import 'package:managment_system/utils/local_storage.dart';
 import 'package:managment_system/models/user.dart';
+import 'package:managment_system/utils/app_theme.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   runApp(const MyApp());
 }
 
@@ -18,13 +24,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home:
-          const HomeFutureBuilder(), // Use HomeFutureBuilder instead of MainPage directly
+      title: 'Management System',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.getThemeData(),
+      home: const HomeFutureBuilder(),
     );
   }
 }
